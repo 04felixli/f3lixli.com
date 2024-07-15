@@ -1,0 +1,18 @@
+/* styles.css */
+.grid-container {
+    width: full;
+    margin: 20px;
+    columns: 2;
+    column-gap: 20px;
+
+}
+
+.grid-container .card {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.grid-container .card img {
+    width: 100%;
+}
