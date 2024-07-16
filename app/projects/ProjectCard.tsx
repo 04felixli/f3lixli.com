@@ -7,7 +7,7 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
     return (
-        <div className='w-full mb-3 break-inside-avoid border border-[#ccc] rounded-md shadow-lg'>
+        <div className='w-full mb-3 break-inside-avoid border border-[#ccc] rounded-md shadow-lg z-50 relative'>
             <img
                 src={project.imagePath}
                 alt={`${project.name} Image`}

@@ -1,8 +1,7 @@
 import React from 'react'
 import Name from './Name'
 import Subinfo from './Subinfo'
-import Links from './Links'
-import Button from '../util/Button'
+import Button from '../util/Button/Button'
 
 const About = () => {
     return (
@@ -11,9 +10,9 @@ const About = () => {
                 <Name />
                 <Subinfo />
                 <div className='mt-3'>
-                    <Button text="Resume" className='border w-fit px-3 py-1 rounded-md' />
+                    {/* <Button text="Resume" className='border w-fit px-3 py-1 rounded-md' /> */}
+                    <Button text="Resume" className='' />
                 </div>
-                <Links />
             </section>
         </div>
     )

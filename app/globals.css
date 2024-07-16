@@ -25,7 +25,6 @@
 body {
   padding-left: 20%;
   padding-right: 20%;
-  padding-bottom: 10%;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to left,
       rgb(var(--stop1-rgb)) 0%,
@@ -33,6 +32,20 @@ body {
       rgb(var(--stop3-rgb)) 65%,
       rgb(var(--stop4-rgb)) 85%,
       rgb(var(--stop5-rgb)) 100%);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
 .image {

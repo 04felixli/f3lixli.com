@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import NavBar from '../NavBar/NavBar';
 import SectionLayout from './SectionLayout';
 import About from '../About/About';
+import Footer from '../Footer/Footer';
 
 interface Props {
     children: ReactNode;
@@ -21,6 +22,7 @@ const Layout = ({ children, pageName }: Props) => {
             ) : (
                 <About />
             )}
+            <Footer />
         </div>
     );
 };
