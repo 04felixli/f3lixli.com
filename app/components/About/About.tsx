@@ -9,9 +9,8 @@ const About = () => {
             <section className="w-full tablet:w-6/12 flex flex-col">
                 <Name />
                 <Subinfo />
-                <div className='mt-3'>
-                    {/* <Button text="Resume" className='border w-fit px-3 py-1 rounded-md' /> */}
-                    <Button text="Resume" className='' />
+                <div className='mt-3 hover:scale-105 duration-300 w-fit'>
+                    <Button text="Resume" />
                 </div>
             </section>
         </div>

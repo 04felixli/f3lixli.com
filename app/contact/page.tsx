@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '../components/util/layout'
 import Button from '../components/util/Button/Button'
+import { Pages } from '../components/NavBar/NavBar'
 
 const Experiences = () => {
     return (
-        <Layout pageName='Contact Me'>
+        <Layout currentPage={Pages.contact} pageName='Contact Me'>
             <section className='mt-5'>
                 <p>Get in touch or shoot me an email directly at 04felix.li@gmail.com</p>
             </section>
@@ -35,7 +36,9 @@ const Experiences = () => {
                         required
                     ></textarea>
                 </div>
-                <Button text="Send Message" />
+                <div className='mt-3 hover:scale-105 duration-300 w-fit'>
+                    <Button text="Send Message" />
+                </div>
             </form>
         </Layout>
     )
