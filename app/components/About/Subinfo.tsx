@@ -2,7 +2,14 @@ import React from 'react'
 
 const Subinfo = () => {
     return (
-        <p className="text-lg mt-5">I'm an aspiring software/full stack developer, engineer, or whatever you want to call it, currently studying computer engineering at the University of Waterloo and looking for summer 2024 internships!</p>
+        <p className="text-lg mt-5">
+            The desert wind blew the tumbleweed in front of the car.
+            Alex swerved to avoid the tumbleweed, but he turned the wheel a bit too strong and
+            the car left the road and skidded onto the dirt median. He instantly slammed on the
+            brakes and the car stopped in a cloud of dirt. When the dust cloud had settled and
+            he could see around him again, he realized that he'd somehow crossed over into an
+            entirely new dimension.
+        </p>
     )
 }
 

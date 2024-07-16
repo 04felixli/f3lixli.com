@@ -1,6 +1,5 @@
 import React from 'react';
 import { ProjectObject } from '../Objects/ProjectObjects';
-import './projects.css'; // Import your CSS file
 
 interface Props {
     project: ProjectObject;
@@ -8,10 +7,11 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
     return (
-        <div className='card'>
+        <div className='w-full mb-3 break-inside-avoid border border-[#ccc] rounded-md shadow-lg'>
             <img
                 src={project.imagePath}
                 alt={`${project.name} Image`}
+                className='w-full object-contain rounded-md'
             />
         </div>
     );
