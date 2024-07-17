@@ -12,7 +12,7 @@ interface Props {
 
 const Layout = ({ children, currentPage, pageName }: Props) => {
     return (
-        <div className="flex flex-col items-center w-full mt-20">
+        <div className="flex flex-col items-center w-full mt-20 px-[20%]">
             <section className='mb-20 w-full'>
                 <NavBar currentPage={currentPage} />
             </section>

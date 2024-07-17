@@ -23,8 +23,6 @@
 } */
 
 body {
-  padding-left: 20%;
-  padding-right: 20%;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to left,
       rgb(var(--stop1-rgb)) 0%,
