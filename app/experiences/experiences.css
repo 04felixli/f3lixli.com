@@ -22,8 +22,4 @@
     .timeline-title {
         @apply text-2xl font-semibold tracking-wide mb-2;
     }
-
-    /* .timeline-description {
-        @apply text-gray-500;
-    } */
 }

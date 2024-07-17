@@ -1,4 +1,16 @@
 import React, { ReactNode } from 'react';
+import { motion } from 'framer-motion';
+import { MotionDiv } from './MotionDiv';
+
+const titleVariants = {
+    hidden: { x: '-100%', opacity: 0 },
+    visible: { x: 0, opacity: 1 }
+};
+
+const contentVariants = {
+    hidden: { x: '100%', opacity: 0 },
+    visible: { x: 0, opacity: 1 }
+};
 
 interface Props {
     children: ReactNode;
@@ -7,11 +19,37 @@ interface Props {
 
 const SectionLayout = ({ children, sectionName }: Props) => {
     return (
-        <section className='flex item-center w-full flex-col'>
-            <h1 className="section-names ">{sectionName}</h1>
-            {children}
+        <section className='flex items-center w-full flex-col'>
+            <MotionDiv
+                variants={titleVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{
+                    delay: 0.1,
+                    ease: "easeInOut",
+                    duration: 0.5
+                }}
+                viewport={{ amount: 0 }}
+                className='w-full'
+            >
+                <h1 className="section-names">{sectionName}</h1>
+            </MotionDiv>
+            <MotionDiv
+                variants={contentVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{
+                    delay: 0.1,
+                    ease: "easeInOut",
+                    duration: 0.5
+                }}
+                viewport={{ amount: 0 }}
+                className='w-full'
+            >
+                {children}
+            </MotionDiv>
         </section>
     );
 }
 
-export default SectionLayout
+export default SectionLayout;

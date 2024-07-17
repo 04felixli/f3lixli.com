@@ -3,11 +3,17 @@ import NavBar, { Pages } from '../NavBar/NavBar';
 import SectionLayout from './SectionLayout';
 import About from '../About/About';
 import Footer from '../Footer/Footer';
+import { MotionDiv } from './MotionDiv';
 
 interface Props {
     children: ReactNode;
     currentPage: Pages;
     pageName: string;
+}
+
+export const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
 }
 
 const Layout = ({ children, currentPage, pageName }: Props) => {

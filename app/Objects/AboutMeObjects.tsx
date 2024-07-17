@@ -9,7 +9,7 @@ interface AboutMeObject {
 
 export const AboutMe: AboutMeObject = {
     name: "Felix Li",
-    description: "The desert wind blew the tumbleweed in front of the car. Alex swerved to avoid the tumbleweed, but he turned the wheel a bit too strong and the car left the road and skidded onto the dirt median. He instantly slammed on the brakes and the car stopped in a cloud of dirt. When the dust cloud had settled and he could see around him again, he realized that he'd somehow crossed over into an entirely new dimension.",
+    description: "Hey there! My name is Felix Li and I'm a second year computer engineering student at the University of Waterloo. I just finished my co-op as a research assistant at the University of Waterloo, and now I'm looking for fall 2025 internships! \n\nWhen I'm not studying, you can find me at the gym, playing basketball, swimming, or learning about random stuff like Star Wars and Marvel! Recently I've been really into web development, which is the reason this website exists!",
     pfpPath: "/Images/Pfp.jpeg",
     linkedIn: 'https://www.linkedin.com/in/04felixli',
     github: 'https://github.com/04felixli',

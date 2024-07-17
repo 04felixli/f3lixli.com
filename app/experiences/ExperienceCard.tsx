@@ -28,7 +28,7 @@ const ExperienceCard = ({ experience }: Props) => {
                             </div>
                         </div>
                         <p className='border border-[#ccc] rounded-md w-fit px-2 text-[#ccc]'>{experience.role}</p>
-                        <p className='timeline-description mt-1'>
+                        <p className='mt-1'>
                             {text.map((word, index) => (
                                 experience.keyWords.includes(word) ?
                                     <span className='font-bold' key={index}>{word} </span> :

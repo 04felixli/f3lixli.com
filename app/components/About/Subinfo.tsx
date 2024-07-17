@@ -3,9 +3,12 @@ import React from 'react'
 
 const Subinfo = () => {
     return (
-        <p className="text-lg mt-5">
-            {AboutMe.description}
-        </p>
+        <div className='text-lg mt-3'>
+            {AboutMe.description.split('\n\n').map((paragraph, index) => (
+                <p key={index} className={`${index !== 0 ? 'mt-2' : ''}`}>{paragraph}</p>
+            ))}
+        </div>
+
     )
 }
 

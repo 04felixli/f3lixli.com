@@ -8,17 +8,15 @@ export interface ProjectObject {
 
 export const SlimPossible: ProjectObject = {
     name: 'SlimPossible',
-    description: `SlimPossible is a comprehensive web application empowering 
-                  gym-goers to track their workouts and personal metrics, monitor progress, 
-                  and create customized workout templates effortlessly.`,
-    techStack: ['React', 'ASP.NET Core', 'PostgreSQL', 'Tailwind CSS'],
+    description: `A comprehensive, full-stack workout tracker`,
+    techStack: ['Next.Js', 'ASP.NET Core', 'PostgreSQL', 'Tailwind CSS'],
     imagePath: '/Images/SlimPossible.png',
     gitHubLink: "https://github.com/04felixli",
 }
 
 export const ChessProject: ProjectObject = {
     name: 'PvP Chess',
-    description: 'A two player chess game with features such as legal move validation and checkmate/stalemate checking.',
+    description: 'A two player chess game',
     techStack: ['Python', 'Pygame'],
     imagePath: '/Images/ChessGame.png',
     gitHubLink: 'https://github.com/04felixli/Chess-Project',

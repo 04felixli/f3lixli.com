@@ -34,7 +34,7 @@ const Form = () => {
                     required
                 ></textarea>
             </div>
-            <div className='mt-3 hover:scale-105 duration-300 w-fit'>
+            <div className='mt-3 hover:scale-105 duration-300 w-fit animate-bounce'>
                 <Button text="Send Message" />
             </div>
         </form>
