@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { MotionDiv } from './MotionDiv';
+import SectionTitle from './SectionTitle';
 
 const titleVariants = {
     hidden: { x: '-100%', opacity: 0 },
@@ -32,7 +33,7 @@ const SectionLayout = ({ children, sectionName }: Props) => {
                 viewport={{ amount: 0 }}
                 className='w-full'
             >
-                <h1 className="section-names">{sectionName}</h1>
+                <SectionTitle sectionName={sectionName} />
             </MotionDiv>
             <MotionDiv
                 variants={contentVariants}
