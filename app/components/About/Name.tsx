@@ -6,8 +6,8 @@ import { TypeAnimation } from 'react-type-animation'
 const Name = () => {
     return (
         <>
-            <p className="text-3xl laptop-L:text-4xl mt-5">I'm</p>
-            <p className="text-7xl laptop-L:text-9xl border-b-2 w-full">
+            <p className="text-3xl mt-5">I'm</p>
+            <p className="text-7xl border-b-2 w-full">
                 <TypeAnimation
                     sequence={[
                         1000,

@@ -9,7 +9,7 @@ import { MotionDiv } from '../util/MotionDiv';
 const About = () => {
     return (
         <div className="text-color flex flex-row items-center">
-            <section className="w-full tablet:w-6/12 flex flex-col">
+            <section className="w-full flex flex-col">
                 <MotionDiv
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
