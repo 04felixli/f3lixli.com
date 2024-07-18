@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation'
 
 const Name = () => {
     return (
-        <>
+        <div>
             <p className="text-3xl mt-5">I'm</p>
             <p className="text-7xl border-b-2 w-full">
                 <TypeAnimation
@@ -25,7 +25,7 @@ const Name = () => {
                     repeat={Infinity}
                 />
             </p>
-        </>
+        </div>
 
     )
 }

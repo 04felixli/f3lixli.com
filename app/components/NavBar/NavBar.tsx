@@ -24,7 +24,7 @@ const NavBar = ({ currentPage }: Props) => {
                     className='w-full h-full object-contain rounded-md hover:scale-105 duration-300'
                 />
             </Link>
-            <div className='w-4/12 flex justify-between'>
+            <div className='sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 flex justify-between'>
                 <Link href='/experiences' className={`navBar-links ${currentPage === Pages.experiences ? 'opacity-100 active' : ''}`}>Experiences</Link>
                 <Link href='/projects' className={`navBar-links ${currentPage === Pages.projects ? 'opacity-100 active' : ''}`}>Projects</Link>
                 <Link href='/contact' className={`navBar-links ${currentPage === Pages.contact ? 'opacity-100 active' : ''}`}>Contact</Link>

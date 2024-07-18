@@ -7,15 +7,15 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      'mobile-S': '320px', // Default
-      'mobile-M': '375px',
-      'mobile-L': '425px',
-      'tablet': '768px',
-      'laptop': '1024px',
-      'laptop-L': '1440px',
-      '4K': '2560px',
-    },
+    // screens: {
+    //   'mobile-S': '320px', // Default
+    //   'mobile-M': '375px',
+    //   'mobile-L': '425px',
+    //   'tablet': '768px',
+    //   'laptop': '1024px',
+    //   'laptop-L': '1440px',
+    //   '4K': '2560px',
+    // },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
