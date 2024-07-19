@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react'
+import { useMediaQuery } from 'react-responsive';
 
 interface Props {
     sectionName: string;
@@ -9,8 +10,13 @@ const SectionTitle = ({ sectionName }: Props) => {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase();
     const [name, setName] = useState(sectionName);
     const iterations = useRef(0);
+    const isMobile = useMediaQuery({ query: '(max-width: 320px)' });
 
     useEffect(() => {
+        if (isMobile) {
+            return;
+        }
+
         const timeout = setTimeout(() => {
             const interval = setInterval(() => {
                 setName(prevName => {
