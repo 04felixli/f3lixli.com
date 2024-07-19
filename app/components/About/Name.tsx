@@ -18,6 +18,8 @@ const Name = () => {
                         1000, // wait 1s before replacing "Mice" with "Hamsters"
                         "A Software Developer",
                         1000,
+                        "A UWaterloo Student",
+                        1000,
                     ]}
                     wrapper="span"
                     speed={50}
