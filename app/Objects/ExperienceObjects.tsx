@@ -27,7 +27,7 @@ export const RIFOExperience: ExperienceObject = {
 }
 
 export const RogersExperience: ExperienceObject = {
-    companyName: 'Rogers Communications Inc.',
+    companyName: 'Rogers',
     description: 'Enhanced fiber optic transport link reliability across various speeds, through collaborative testing methods while supporting a broad spectrum of Rogers customers across GSM, UMTS, LTE, and 5G technologies.',
     keyWords: ["GSM,", "UMTS,", "LTE,", "5G"],
     startDate: 'Jan. 2023',

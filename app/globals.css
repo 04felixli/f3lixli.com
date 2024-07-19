@@ -54,7 +54,7 @@ body::before {
 }
 
 .section-names {
-  @apply text-5xl border-b-2;
+  @apply text-5xl border-b-2 break-words;
 }
 
 @layer utilities {
