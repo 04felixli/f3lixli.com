@@ -8,7 +8,7 @@ const Experiences = () => {
     return (
         <Layout currentPage={Pages.contact} pageName='Contact Me'>
             <section className='mt-5'>
-                <p>Get in touch or shoot me an email directly at 04felix.li@gmail.com</p>
+                <p>Get in touch or shoot me an email directly at <a className='underline' href="mailto:04felix.li@gmail.com">04felix.li@gmail.com</a></p>
             </section>
             <Form />
         </Layout>

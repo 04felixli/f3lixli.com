@@ -2,12 +2,12 @@
 import React, { useRef } from 'react'
 import Button from '../components/util/Button/Button'
 import emailjs from '@emailjs/browser';
+import { sendEmailServerAction } from '../components/util/actions';
 
 const Form = () => {
-    const form = useRef<HTMLFormElement>();
 
     return (
-        <form className="space-y-8 mt-3" ref={form as React.RefObject<HTMLFormElement>}>
+        <form className="space-y-8 mt-3" action={sendEmailServerAction}>
             <input
                 type="text"
                 id="name"
