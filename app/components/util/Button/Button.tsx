@@ -1,5 +1,5 @@
 'use client';
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './button.css';
 import { motion } from 'framer-motion';
 
@@ -8,6 +8,7 @@ interface Props {
     onClickFunction?: () => void; // Make onClickFunction optional
     className?: string; // Additional styles if needed
     type?: "button" | "submit" | "reset";
+    disabled?: boolean;
 }
 
 const Button = (props: Props) => {
@@ -18,6 +19,7 @@ const Button = (props: Props) => {
 
     const onClick = props.onClickFunction || handleClick;
     const buttonType = props.type || "submit";
+    const disabled = props.disabled || false;
 
     return (
         <motion.button
@@ -44,8 +46,9 @@ const Button = (props: Props) => {
             className={`px-6 py-2 rounded-md relative radial-gradient shadow-lg ${props.className}`}
             onClick={onClick}
             type={buttonType}
+            disabled={disabled}
         >
-            <span className="tracking-wide h-full w-full block relative linear-mask">
+            <span className={`tracking-wide h-full w-full block relative linear-mask ${disabled ? 'text-gray-500' : ''}`}>
                 {props.text}
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />

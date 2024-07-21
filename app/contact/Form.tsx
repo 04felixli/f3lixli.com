@@ -3,11 +3,21 @@ import React, { useRef } from 'react'
 import Button from '../components/util/Button/Button'
 import emailjs from '@emailjs/browser';
 import { sendEmailServerAction } from '../components/util/actions';
+import SubmitButton from './SubmitButton';
+import toast from 'react-hot-toast';
 
 const Form = () => {
+    const ref = useRef<HTMLFormElement>(null)
 
     return (
-        <form className="space-y-8 mt-3" action={sendEmailServerAction}>
+        <form
+            ref={ref}
+            className="space-y-8 mt-3"
+            action={async FormData => {
+                await sendEmailServerAction(FormData);
+                ref.current?.reset();
+                toast.success("Email Sent Successfully!")
+            }}>
             <input
                 type="text"
                 id="name"
@@ -34,9 +44,7 @@ const Form = () => {
                     required
                 ></textarea>
             </div>
-            <div className='mt-3 hover:scale-105 duration-300 w-fit animate-bounce'>
-                <Button text="Send Message" />
-            </div>
+            <SubmitButton />
         </form>
     )
 }

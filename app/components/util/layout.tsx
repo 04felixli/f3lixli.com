@@ -4,6 +4,7 @@ import SectionLayout from './SectionLayout';
 import About from '../About/About';
 import Footer from '../Footer/Footer';
 import { MotionDiv } from './MotionDiv';
+import { Toaster } from 'react-hot-toast';
 
 interface Props {
     children: ReactNode;
@@ -19,6 +20,7 @@ export const variants = {
 const Layout = ({ children, currentPage, pageName }: Props) => {
     return (
         <div className="flex flex-col items-center w-full mt-20 px-[20%]">
+            <Toaster position="top-center" />
             <section className='mb-20 w-full'>
                 <NavBar currentPage={currentPage} />
             </section>

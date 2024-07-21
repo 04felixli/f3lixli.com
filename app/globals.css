@@ -81,3 +81,14 @@ html {
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 6rem);
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(215, 81, 89, 0.65) inset !important;
+  /* Transparent #D75159 background */
+  box-shadow: 0 0 0 30px rgba(215, 81, 89, 0.65) inset !important;
+  /* Fallback for other browsers */
+  -webkit-text-fill-color: #ffffff !important;
+}
