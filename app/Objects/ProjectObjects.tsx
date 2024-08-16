@@ -11,7 +11,7 @@ export const SlimPossible: ProjectObject = {
     description: `A comprehensive, full-stack workout tracker`,
     techStack: ['Next.Js', 'ASP.NET Core', 'PostgreSQL', 'Tailwind CSS'],
     imagePath: '/Images/SlimPossible.png',
-    gitHubLink: "https://github.com/04felixli",
+    gitHubLink: "https://github.com/04felixli/SlimPossible",
 }
 
 export const ChessProject: ProjectObject = {
