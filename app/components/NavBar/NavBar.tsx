@@ -2,8 +2,8 @@ import { AboutMe } from '@/app/Objects/AboutMeObjects'
 import Link from 'next/link'
 import React from 'react'
 import './navBar.css'
-import { CiMenuFries } from "react-icons/ci";
 import MobileMenu from './MobileMenu';
+import Image from 'next/image';
 
 
 export enum Pages {
@@ -28,7 +28,7 @@ const NavBar = ({ currentPage }: Props) => {
     return (
         <div className='flex items-center justify-between flex-row w-full'>
             <Link href='/' className='w-10 h-10 border border-[#ccc] rounded-md shadow-lg hover:scale-105 duration-300'>
-                <img
+                <Image
                     src={AboutMe.pfpPath}
                     alt={`${AboutMe.name} Image`}
                     className='w-full h-full object-contain rounded-md hover:scale-105 duration-300'

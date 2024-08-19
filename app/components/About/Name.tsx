@@ -8,7 +8,7 @@ const Name = () => {
     // const isMobile = useMediaQuery({ query: '(max-width: 320px)' });
     return (
         <div>
-            <p className="text-3xl mt-5">I'm</p>
+            <p className="text-3xl mt-5">I&#39;m</p>
             <p className="text-4xl max-[265px]:hidden min-[489px]:text-5xl min-[490px]:max-[589px]:text-6xl min-[589px]:text-7xl border-b-2 w-full max-[1124px]:h-36 font-semibold">
                 <TypeAnimation
                     sequence={[
