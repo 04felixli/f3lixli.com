@@ -14,7 +14,7 @@ export interface ExperienceObject {
 
 export const USRAExperience: ExperienceObject = {
     companyName: 'University of Waterloo',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: "Contributed to a PhD student's research on estabilishing a pipeline to generate groundtruths for template based log parsing of large scale log data from various software systems under the supervision of Dr.W.Shang.",
     keyWords: [],
     startDate: 'May. 2024',
     endDate: 'Aug. 2024',
@@ -23,7 +23,7 @@ export const USRAExperience: ExperienceObject = {
     country: 'Canada',
     status: 'Co-op',
     companyLogo: '/Images/uwaterlooLogo.png',
-    role: 'Research Assistant'
+    role: 'Research Assistant Intern'
 }
 
 export const RIFOExperience: ExperienceObject = {
