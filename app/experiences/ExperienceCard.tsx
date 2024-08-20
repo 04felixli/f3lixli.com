@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import './experiences.css';
 import { ExperienceObject } from '../Objects/ExperienceObjects';
 
 interface Props {
     experience: ExperienceObject;
+    children: ReactNode;
 }
 
-const ExperienceCard = ({ experience }: Props) => {
-    const text: string[] = experience.description.split(" ");
+const ExperienceCard = ({ experience, children }: Props) => {
 
     return (
         <section className='w-full'>
@@ -28,13 +28,9 @@ const ExperienceCard = ({ experience }: Props) => {
                             </div>
                         </div>
                         <p className='border border-[#ccc] rounded-md w-fit px-2 text-[#ccc]'>{experience.role}</p>
-                        <p className='mt-1'>
-                            {text.map((word, index) => (
-                                experience.keyWords.includes(word) ?
-                                    <span className='font-bold' key={index}>{word} </span> :
-                                    <span key={index}>{word} </span>
-                            ))}
-                        </p>
+                        <div className='mt-1'>
+                            {children}
+                        </div>
                     </div>
                 </div>
             </div>
