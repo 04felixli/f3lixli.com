@@ -6,7 +6,6 @@ import './projectCard.css';
 import '../experiences/experiences.css';
 import { FiGithub } from 'react-icons/fi';
 import { useMediaQuery } from 'react-responsive';
-import Image from 'next/image';
 
 interface Props {
     project: ProjectObject;
@@ -47,7 +46,7 @@ const ProjectCard = ({ project }: Props) => {
                 onMouseLeave={handleMouseLeave}
                 onClick={handleClick}
             >
-                <Image
+                <img
                     src={project.imagePath}
                     alt={`${project.name} Image`}
                     className='w-full object-contain rounded-md'
@@ -60,7 +59,7 @@ const ProjectCard = ({ project }: Props) => {
                 onMouseLeave={handleMouseLeave}
                 onClick={handleClick}
             >
-                <Image
+                <img
                     src={project.imagePath}
                     alt={`${project.name} Image`}
                     className='w-full object-contain rounded-md blur-sm'

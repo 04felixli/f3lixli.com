@@ -1,7 +1,6 @@
 import React from 'react';
 import './experiences.css';
 import { ExperienceObject } from '../Objects/ExperienceObjects';
-import Image from 'next/image';
 
 interface Props {
     experience: ExperienceObject;
@@ -21,10 +20,10 @@ const ExperienceCard = ({ experience }: Props) => {
                         <div className='flex flex-row items-center justify-between'>
                             <h3 className='timeline-title'>{experience.companyName}</h3>
                             <div className='max-[270px]:hidden ml-3 w-10 h-10 mb-3 flex-shrink-0 break-inside-avoid border border-[#ccc] rounded-md shadow-lg'>
-                                <Image
+                                <img
                                     src={experience.companyLogo}
                                     alt={`${experience.companyName} Image`}
-                                    className='w-full h-full object-contain rounded-md'
+                                    className='w-full h-full object-contain rounded-md bg-white'
                                 />
                             </div>
                         </div>
