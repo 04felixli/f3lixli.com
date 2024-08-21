@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`min-w-screen min-h-screen flex justify-center ${font.className}`}>
+      <body className={`w-full h-full flex justify-center ${font.className}`}>
         {children}
         <SpeedInsights />
         <Analytics />
