@@ -24,33 +24,22 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to left,
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to left,
       rgb(var(--stop1-rgb)) 0%,
       rgb(var(--stop2-rgb)) 40%,
       rgb(var(--stop3-rgb)) 65%,
       rgb(var(--stop4-rgb)) 85%,
       rgb(var(--stop5-rgb)) 100%);
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-  background-size: 20px 20px;
+  background-size: 20px 20px, 20px 20px, cover;
 }
 
 .image {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  /* or use cover depending on your requirement */
 }
 
 .section-names {
