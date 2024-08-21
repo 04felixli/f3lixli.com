@@ -21,9 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`max-w-screen min-w-screen min-h-screen flex justify-center ${font.className}`}>{children}</body>
-      <Analytics />
-      <SpeedInsights />
+      <body className={`max-w-screen min-w-screen min-h-screen flex justify-center ${font.className}`}>
+        {children}
+        <SpeedInsights />
+        <Analytics />
+      </body>
+
+
     </html>
   );
 }
