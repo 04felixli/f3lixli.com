@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import './button.css';
 import { motion } from 'framer-motion';
 
@@ -13,9 +13,7 @@ interface Props {
 
 const Button = (props: Props) => {
     // Temporary default function if none is provided
-    const handleClick = () => {
-        console.log("Default button click!");
-    };
+    const handleClick = () => { };
 
     const onClick = props.onClickFunction || handleClick;
     const buttonType = props.type || "submit";
