@@ -2,7 +2,7 @@ import React from 'react'
 
 const ResumePDF = () => {
     return (
-        <div className="text-color flex items-center justify-center w-full relative z-50">
+        <div className="text-color flex items-center justify-center w-full relative z-50 h-screen">
             <embed
                 src="/Resume.pdf"
                 type="application/pdf"
