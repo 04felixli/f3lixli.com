@@ -5,12 +5,14 @@ import { Pages } from '../components/NavBar/NavBar'
 import USRA from './USRA'
 import RIFO from './RIFO'
 import Rogers from './Rogers'
+import TitaniumAgency from './TitaniumAgency'
 
 const Experiences = () => {
     const experiences = [USRAExperience, RIFOExperience, RogersExperience];
     return (
         <Layout currentPage={Pages.experiences} pageName='Experiences'>
             <div className='mt-5'>
+                <TitaniumAgency />
                 <USRA />
                 <RIFO />
                 <Rogers />

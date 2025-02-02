@@ -53,3 +53,17 @@ export const RogersExperience: ExperienceObject = {
     companyLogo: '/Images/RogersLogo.png',
     role: 'Switch Technician Intern'
 }
+
+export const TitaniumExperience: ExperienceObject = {
+    companyName: 'titanium.agency',
+    description: '',
+    keyWords: [],
+    startDate: 'Jan. 2025',
+    endDate: 'Apr. 2025',
+    techStack: '',
+    location: 'Waterloo, ON',
+    country: 'Canada',
+    status: 'Co-op',
+    companyLogo: '/Images/TitaniumAgency.jpeg',
+    role: 'Software Developer'
+}
