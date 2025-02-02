@@ -18,7 +18,7 @@ const TitaniumAgency = () => {
                     Incorporated retry mechanisms and status-based error handling to enhance system reliability.
                 </li>
                 <li>
-                    Built <span className='font-bold'>ad creation tools</span> using <span className='font-bold'>ASP.NET MVC</span> to send payloads to automated apps, incorporating dynamic validation to ensure data consistency,
+                    Built ad creation tools using <span className='font-bold'>ASP.NET MVC</span> to send payloads to automated apps, incorporating dynamic validation to ensure data consistency,
                     leading to a <span className='font-bold'>40% increase</span> in ad volume.
                 </li>
             </ul>
