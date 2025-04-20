@@ -47,12 +47,12 @@ const MobileMenu = ({ currentPage }: Props) => {
                         exit={{ opacity: 0, y: -100 }}
                         transition={{ duration: 0.3 }}
                     >
-                        <button className='absolute top-10 right-10 text-2xl hover:scale-105 duration-300' onClick={toggleMenu}>X</button>
+                        <button className='absolute top-10 right-10 text-2xl hover:scale-105 duration-300 text-white' onClick={toggleMenu}>X</button>
                         <nav className='text-xl'>
                             <ul className='flex flex-col items-center space-y-10'>
                                 {navLinks.map(link => (
                                     <li key={link.page}>
-                                        <a href={link.href} className={`navBar-links ${currentPage === link.page ? 'opacity-100 active' : ''}`}>
+                                        <a href={link.href} className={`navBar-links text-white ${currentPage === link.page ? 'opacity-100 active' : ''}`}>
                                             {link.title}
                                         </a>
                                     </li>

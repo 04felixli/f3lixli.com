@@ -21,3 +21,20 @@ export const ChessProject: ProjectObject = {
     imagePath: '/Images/ChessGame.png',
     gitHubLink: 'https://github.com/04felixli/Chess-Project',
 }
+
+export const NBAMatchPredictor: ProjectObject = {
+    name: 'NBA Match Predictor',
+    description: 'A machine learning model to predict NBA match outcomes',
+    techStack: ['Python', 'Flask', 'Pandas', 'Scikit-learn'],
+    imagePath: '/Images/NBAMatchPredictor.svg',
+    gitHubLink: 'https://github.com/04felixli/NBA-Game-Predictor',
+}
+
+export const McCheatDay: ProjectObject = {
+    name: 'McCheatDay',
+    description: 'Easily find low-calorie McDonald\'s items',
+    techStack: ['React', 'Flask', 'PostgreSQL', 'Tailwind CSS', 'Selenium'],
+    imagePath: '/Images/McCheatDay.png', 
+    gitHubLink: 'https://github.com/04felixli/McCheatDay'
+}
+
