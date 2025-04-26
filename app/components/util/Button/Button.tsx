@@ -46,7 +46,7 @@ const Button = (props: Props) => {
             type={buttonType}
             disabled={disabled}
         >
-            <span className={`tracking-wide h-full w-full block relative linear-mask ${disabled ? 'text-gray-500' : ''}`}>
+            <span className={`tracking-wide h-full w-full block relative linear-mask ${disabled ? 'text-gray-500' : 'text-white'}`}>
                 {props.text}
             </span>
             <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
