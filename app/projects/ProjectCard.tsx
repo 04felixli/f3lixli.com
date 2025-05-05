@@ -11,7 +11,7 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
     return (
-        <div className='w-full mb-3 break-inside-avoid rounded-md shadow-lg z-50 relative'>
+        <a className='w-full mb-3 break-inside-avoid rounded-md shadow-lg relative' href={project.gitHubLink} target="_blank">
             <img
                 src={project.imagePath}
                 alt={`${project.name} Image`}
@@ -36,7 +36,7 @@ const ProjectCard = ({ project }: Props) => {
                     ))}
                 </ul>
             </div>
-        </div>
+        </a>
     );
 }
 
