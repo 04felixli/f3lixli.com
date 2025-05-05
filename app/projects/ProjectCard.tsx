@@ -11,22 +11,17 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
     return (
-        <div className='w-full mb-3 break-inside-avoid rounded-md shadow-lg relative'>
+        <div 
+            className='w-full mb-3 break-inside-avoid rounded-md shadow-lg relative hover:scale-[1.02] duration-300 ease-in-out cursor-pointer hover:z-20'
+            onClick={() => window.open(project.gitHubLink, '_blank')}
+        >
             <img
                 src={project.imagePath}
                 alt={`${project.name} Image`}
                 className='w-full object-contain rounded-md blur-sm'
             />
             <div className='overlay p-5 h-full rounded-md'>
-                <div className='w-full flex max-[349px]:flex-col min-[350px]:flex-row justify-between'>
-                    <a href={project.gitHubLink} target="_blank" className="w-8 min-[350px]:hidden flex-shrink-0">
-                        <FiGithub className='w-full h-full' />
-                    </a>
-                    <h3 className='timeline-title w-full break-words'>{project.name}</h3>
-                    <a href={project.gitHubLink} target="_blank" className="w-8 max-[349px]:hidden flex-shrink-0">
-                        <FiGithub className='w-full h-full' />
-                    </a>
-                </div>
+                <h3 className='w-full flex timeline-title w-full break-words'>{project.name}</h3>
                 <p className='text-sm w-full max-[270px]:hidden'>{project.description}</p>
                 <ul className='tech-stack w-full max-sm:hidden'>
                     {project.techStack.map((tech, index) => (

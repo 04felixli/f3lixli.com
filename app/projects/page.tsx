@@ -9,7 +9,7 @@ const Projects = () => {
 
     return (
         <Layout currentPage={Pages.projects} pageName="Projects">
-            <ul className="w-full mt-5 columns-1 md:columns-2 lg:columns-3 gap-5 space-y-5">
+            <ul className="w-full mt-5 columns-1 md:columns-2 gap-5 space-y-5">
                 {projects.map(project => (
                     <li key={project.name} className="break-inside-avoid">
                         <ProjectCard project={project} />
