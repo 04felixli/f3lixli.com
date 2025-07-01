@@ -9,13 +9,13 @@ const Projects = () => {
 
     return (
         <Layout currentPage={Pages.projects} pageName="Projects">
-            <ul className="w-full mt-5 columns-1 md:columns-2 gap-5 space-y-5">
+            <div className="w-full h-full mt-5 columns-1 md:columns-2 space-y-5">
                 {projects.map(project => (
-                    <li key={project.name} className="break-inside-avoid">
+                    <div key={project.name} className="break-inside-avoid">
                         <ProjectCard project={project} />
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </Layout>
     )
 }
