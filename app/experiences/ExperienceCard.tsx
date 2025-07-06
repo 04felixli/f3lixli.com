@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience, children }: Props) => {
                         <span className='timeline-date'>{experience.startDate} - {experience.endDate}</span>
                         <p className='timeline-date'>{experience.location}</p>
                         <div className='flex flex-row items-center justify-between'>
-                            <h3 className='timeline-title'>{experience.companyName}</h3>
+                            <h3 className='timeline-title'>{experience.role}</h3>
                             <div className='max-[270px]:hidden ml-3 w-10 h-10 mb-3 flex-shrink-0 break-inside-avoid border border-[#ccc] rounded-md shadow-lg'>
                                 <img
                                     src={experience.companyLogo}
@@ -27,7 +27,7 @@ const ExperienceCard = ({ experience, children }: Props) => {
                                 />
                             </div>
                         </div>
-                        <p className='border border-[#ccc] rounded-md w-fit px-2 text-[#ccc]'>{experience.role}</p>
+                        <p className='border border-[#aaa] rounded-md w-fit px-2 text-[#aaa]'>{experience.companyName}</p>
                         <div className='mt-1'>
                             {children}
                         </div>

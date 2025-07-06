@@ -23,7 +23,7 @@ export const USRAExperience: ExperienceObject = {
     country: 'Canada',
     status: 'Co-op',
     companyLogo: '/Images/uwaterlooLogo.png',
-    role: 'Research Assistant Intern'
+    role: 'Undergraduate Research Assistant'
 }
 
 export const RIFOExperience: ExperienceObject = {
@@ -37,7 +37,7 @@ export const RIFOExperience: ExperienceObject = {
     country: 'Canada',
     status: 'Co-op',
     companyLogo: '/Images/RifoLogo.jpg',
-    role: 'Full Stack Developer Intern'
+    role: 'Full Stack Developer'
 }
 
 export const RogersExperience: ExperienceObject = {
@@ -51,7 +51,7 @@ export const RogersExperience: ExperienceObject = {
     country: 'Canada',
     status: 'Co-op',
     companyLogo: '/Images/RogersLogo.png',
-    role: 'Switch Technician Intern'
+    role: 'Switch Technician'
 }
 
 export const TitaniumExperience: ExperienceObject = {
@@ -65,5 +65,19 @@ export const TitaniumExperience: ExperienceObject = {
     country: 'Canada',
     status: 'Co-op',
     companyLogo: '/Images/TitaniumAgency.jpeg',
+    role: 'Software Developer'
+}
+
+export const EncoreFinancialExperience: ExperienceObject = {
+    companyName: 'Encore Financial',
+    description: '',
+    keyWords: [],
+    startDate: 'Jul. 2025',
+    endDate: 'Aug. 2025',
+    techStack: '',
+    location: 'Toronto, ON',
+    country: 'Canada',
+    status: 'Co-op',
+    companyLogo: '/Images/EncoreFinancial.png',
     role: 'Software Developer'
 }
