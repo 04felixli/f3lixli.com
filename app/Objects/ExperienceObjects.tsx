@@ -79,5 +79,5 @@ export const EncoreFinancialExperience: ExperienceObject = {
     country: 'Canada',
     status: 'Co-op',
     companyLogo: '/Images/EncoreFinancial.png',
-    role: 'Software Developer'
+    role: 'AI Applications Developer'
 }
