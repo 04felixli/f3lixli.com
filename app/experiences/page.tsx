@@ -1,26 +1,32 @@
-import React from 'react'
-import Layout from '../components/util/layout'
-import { RIFOExperience, RogersExperience, USRAExperience } from '../Objects/ExperienceObjects'
-import { Pages } from '../components/NavBar/NavBar'
-import USRA from './USRA'
-import RIFO from './RIFO'
-import Rogers from './Rogers'
-import TitaniumAgency from './TitaniumAgency'
-import EncoreFinancial from './EncoreFinancial'
+import React from "react";
+import Layout from "../components/util/layout";
+import {
+  RIFOExperience,
+  RogersExperience,
+  USRAExperience,
+} from "../Objects/ExperienceObjects";
+import { Pages } from "../components/NavBar/NavBar";
+import USRA from "./USRA";
+import RIFO from "./RIFO";
+import Rogers from "./Rogers";
+import TitaniumAgency from "./TitaniumAgency";
+import EncoreFinancial from "./EncoreFinancial";
+import BetterUp from "./BetterUp";
 
 const Experiences = () => {
-    const experiences = [USRAExperience, RIFOExperience, RogersExperience];
-    return (
-        <Layout currentPage={Pages.experiences} pageName='Experiences'>
-            <div className='mt-5'>
-                <EncoreFinancial />
-                <TitaniumAgency />
-                <USRA />
-                <RIFO />
-                <Rogers />
-            </div>
-        </Layout>
-    )
-}
+  const experiences = [USRAExperience, RIFOExperience, RogersExperience];
+  return (
+    <Layout currentPage={Pages.experiences} pageName="Experiences">
+      <div className="mt-5">
+        <BetterUp />
+        <EncoreFinancial />
+        <TitaniumAgency />
+        <USRA />
+        <RIFO />
+        <Rogers />
+      </div>
+    </Layout>
+  );
+};
 
-export default Experiences
+export default Experiences;
